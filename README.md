@@ -1,7 +1,7 @@
 Concurrence Layer for Keras
 ===========================
 
-This layer is a one-shot attention layer to be used with Keras v. 1.2 or later.
+This layer is a one-shot attention layer to be used with Keras v. 2.0 or later.
 
 It takes the output of an RNN layer with return_sequences=True and creates a single return sequence which is 
 the weighted sum of the input return sequences based on the trainable internal weights and the input sequences 
