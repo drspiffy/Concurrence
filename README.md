@@ -17,5 +17,5 @@ model.add(Concurrence())
 model.add(RepeatVector(max_out_seq_len + 1))
 model.add(GRU(hidden_size * 2, return_sequences=True))
 model.add(TimeDistributed(Dense(output_dim=output_size, activation="softmax")))
-model.compile(loss="categorical_crossentropy", optimizer="rms_prop")
+model.compile(loss="categorical_crossentropy", optimizer="rmsprop")
 ```
